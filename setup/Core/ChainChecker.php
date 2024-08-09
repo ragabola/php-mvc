@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middlewares;
+namespace Setup\Core;
 
 use Setup\Transport\Request;
 

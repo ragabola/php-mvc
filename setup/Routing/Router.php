@@ -19,7 +19,6 @@ class Router
             "method" => $method,
             "resource" => new Resource($resource[0], $resource[1])
         ];
-        // dd(env('DB_CONNECTION'));
         return $this;
     }
 
@@ -59,7 +58,6 @@ class Router
 
             return $route['resource']->grantAccess($this->app->request)->execute($params, $this->app);
         }
-        // abort();
         throw RouteException::notFound($uri);
     }
 
